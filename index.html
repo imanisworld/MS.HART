@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="[Short description of the business or person.]" />
+  <title>[Site Name] | [Short Tagline]</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="[Site Name] home">[SITE NAME]</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero section">
+      <div class="shell hero-grid">
+        <div>
+          <p class="eyebrow">[Category / role / business type]</p>
+          <h1>[Clear statement of what you do and who it is for.]</h1>
+          <p class="lede">[One or two sentences that make the offer easy to understand.]</p>
+          <div class="actions">
+            <a class="button button-primary" href="#contact">Primary action</a>
+            <a class="button button-secondary" href="#work">See the work</a>
+          </div>
+        </div>
+
+        <div class="media-placeholder" role="img" aria-label="Placeholder for primary brand image">
+          <span>Primary image / video</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-muted">
+      <div class="shell split">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>[A short, specific introduction.]</h2>
+        </div>
+        <div class="prose">
+          <p>[Who she is, what she does, what makes her approach different, and what someone should know before working with her.]</p>
+          <p>[Optional second paragraph for story, credentials, location, values, or personality.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>[What people can hire or book her for.]</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <p class="card-index">01</p>
+            <h3>[Service one]</h3>
+            <p>[Short explanation of what this service includes and who it is for.]</p>
+          </article>
+          <article class="card">
+            <p class="card-index">02</p>
+            <h3>[Service two]</h3>
+            <p>[Short explanation of what this service includes and who it is for.]</p>
+          </article>
+          <article class="card">
+            <p class="card-index">03</p>
+            <h3>[Service three]</h3>
+            <p>[Short explanation of what this service includes and who it is for.]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section section-dark">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>[Proof, projects, portfolio, products, or results.]</h2>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="media-placeholder media-placeholder-dark"><span>Project image</span></div>
+            <div>
+              <p class="meta">[Type / year]</p>
+              <h3>[Project or client name]</h3>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="media-placeholder media-placeholder-dark"><span>Project image</span></div>
+            <div>
+              <p class="meta">[Type / year]</p>
+              <h3>[Project or client name]</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="shell contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>[Simple invitation to get in touch.]</h2>
+          <p class="lede">[Set expectations: what to send, response time, booking window, location, etc.]</p>
+        </div>
+
+        <form class="contact-form" data-placeholder-form>
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send inquiry</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-wrap">
+      <p>© <span data-year></span> [Site Name]</p>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
